@@ -1,4 +1,4 @@
-<div class="p-10 mb-4 border-solid border-2 border-sky-500">
+<div class="p-10 mb-4">
     <div>
         <a href="" class="text-blue-500">Post category</a>
     </div>
