@@ -31,11 +31,9 @@
     <div class="w-3/4 ml-10">
 
         {{-- Single post --}}
-        <x-card />
-        <x-card />
-        <x-card />
-        <x-card />
-        <x-card />
+        @foreach ($posts as $post)
+            <x-post :post="$post"/>
+        @endforeach
 
     </div>
 
