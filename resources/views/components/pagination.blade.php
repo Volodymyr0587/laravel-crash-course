@@ -1,5 +1,5 @@
 {{-- Pagination --}}
-<div class="p-10 mt-auto w-full bg-amber-300 flex items-center justify-center">
+<div class="p-10 mt-auto w-full flex items-center justify-center">
     <ul>
         <li class="inline"><a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
                 href="#">Previous</a></li>
