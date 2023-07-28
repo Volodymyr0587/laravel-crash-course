@@ -20,6 +20,7 @@
 
     </div>
 
-    <x-pagination />
+    {{-- {{ $posts->links() }} --}}
+    <x-pagination :posts="$posts" />
 
 @endsection

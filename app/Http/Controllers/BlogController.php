@@ -11,7 +11,7 @@ class BlogController extends Controller
     public function index()
     {
         $categories = Category::orderBy('title')->get();
-        $posts = Post::all();
+        $posts = Post::paginate(4);
 
         return view('pages.index', [
             'posts' => $posts,
@@ -25,7 +25,7 @@ class BlogController extends Controller
         $current_category = Category::where('slug', $slug)->first();
 
         return view('pages.index', [
-            'posts' => $current_category->posts,
+            'posts' => $current_category->posts()->paginate(2),
             'categories' => $categories
         ]);
     }
