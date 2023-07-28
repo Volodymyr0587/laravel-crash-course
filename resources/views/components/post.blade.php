@@ -1,6 +1,6 @@
 <div class="p-10 mb-4">
     <div>
-        <a href="#" class="text-blue-500">{{ $post->category['title'] }}</a>
+        <a href="{{ route('getPostsByCategory', $post->category['slug']) }}" class="text-blue-500">{{ $post->category['title'] }}</a>
     </div>
     <div>
         <p>{{ $post->title }}</p>
