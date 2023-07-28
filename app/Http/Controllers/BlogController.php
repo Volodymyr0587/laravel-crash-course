@@ -37,7 +37,8 @@ class BlogController extends Controller
 
         return view('pages.show-post', [
             'post' => $post,
-            'categories' => $categories
+            'categories' => $categories,
+            'slug_category' => $slug_category
         ]);
     }
 }
