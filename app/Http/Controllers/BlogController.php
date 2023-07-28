@@ -19,8 +19,14 @@ class BlogController extends Controller
         ]);
     }
 
-    public function getPostsByCategory()
+    public function getPostsByCategory($slug)
     {
+        $categories = Category::orderBy('title')->get();
+        $current_category = Category::where('slug', $slug)->first();
 
+        return view('pages.index', [
+            'posts' => $current_category->posts,
+            'categories' => $categories
+        ]);
     }
 }

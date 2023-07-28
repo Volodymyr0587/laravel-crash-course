@@ -14,7 +14,9 @@
 
 <body>
     <div class="flex flex-col p-5 w-full h-screen">
-        <h1 class="mt-4 ml-4 text-4xl text-bold">@yield('title')</h1>
+        <h1 class="mt-4 ml-4 text-4xl text-bold">
+            <a href="/">@yield('title')</a>
+        </h1>
 
         @yield('content')
 
